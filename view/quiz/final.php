@@ -21,10 +21,10 @@ aumentarCompletados();
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="/public/styles/quiz.css">
-    <title>QUIZ GAME</title>
+    <title>Piniors - QUIZ GAME</title>
 </head>
 <body>
-
+<?php include("view/includes/header.php") ?>
     <div class="container-final" id="container-final">
         <div class="info">
             <h2>RESULTADO FINAL</h2>

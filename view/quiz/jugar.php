@@ -66,6 +66,7 @@ if(isset($_POST['siguiente'])){//Ya esta jugando
     <link rel="stylesheet" href="/public/styles/quiz.css">
 </head>
 <body>
+<?php include("view/includes/header.php") ?>
     <div class="container-juego" id="container-juego">
         <header class="header">
             <div class="categoria">
