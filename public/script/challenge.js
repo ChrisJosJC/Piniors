@@ -1,8 +1,11 @@
+let $html = document.getElementById("html");
+let $css = document.getElementById("css");
+let $js = document.getElementById("js");
+let preview = document.getElementById("preview");
+let sharebtn = document.getElementById("btn-share")
 
-let preview = document.getElementById("preview")
-
-const createHTML = ({html, css, js}) =>{
-    return `
+const createHTML = ({ html, css, js }) => {
+  return `
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -21,22 +24,51 @@ const createHTML = ({html, css, js}) =>{
         </script>
     </body>
     </html>
-    `
-}
+    `;
+};
 
 const update = () => {
-    let html = document.getElementById("html").value
-    let css = document.getElementById("css").value
-    let js = document.getElementById("js").value
-    let hashed = `/challenges/token/${window.btoa(html)}|${window.btoa(css)}|${window.btoa(js)}`
-    history.replaceState(null, null, hashed)
-    const doc = createHTML({html,css,js})
-    preview.setAttribute('srcdoc', doc)
+  let html = $html.value;
+  let css = $css.value;
+  let js = $js.value;
+  console.log({html,css,js})
+  let hashed = `/challenges/token/${window.btoa(html)}|${window.btoa(
+    css
+  )}|${window.btoa(js)}`;
+  history.replaceState(null, null, hashed);
+  const doc = createHTML({html, css, js});
+  preview.setAttribute("srcdoc", doc);
+  sharebtn.dataset.href = hashed
+};
+
+async function init() {
+    let html = document.getElementById("html");
+    let css = document.getElementById("css");
+  let js = document.getElementById("js");
+  const { pathname } = window.location;
+  const [HTML, CSS, JS] = pathname.slice(18).split("%7C");
+  console.log({HTML, CSS, JS})
+  html.value = window.atob(HTML);
+  css.value = window.atob(CSS);
+  js.value = window.atob(JS);
+  update();
 }
 
-html.addEventListener("input", update)
-css.addEventListener("input", update)
-js.addEventListener("input", update)
+function copy() {
+    let link = sharebtn.dataset.href
+    navigator.clipboard.writeText("https://piniors.com"+link)
+    .then(() => {
+        console.log('Texto copiado al portapapeles')
+      })
+      .catch(err => {
+        console.error('Error al copiar al portapapeles:', err)
+      })
+}
 
+$html.addEventListener("input", update);
+$css.addEventListener("input", update);
+$js.addEventListener("input", update);
+sharebtn.addEventListener("click", copy);
 
-update()
+init();
+// update()

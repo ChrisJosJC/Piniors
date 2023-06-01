@@ -42,11 +42,11 @@
                     <div class="button-container">
                         <div class="text-fields fname">
                             <label for="name"><i class='bx bx-user'></i></label>
-                            <input type="text" name="name" id="fname" placeholder="Enter your first name">
+                            <input type="text" name="name" id="fname" placeholder="Enter your name">
                         </div>
                         <div class="text-fields lname">
                             <label for="username"><i class='bx bx-user'></i></label>
-                            <input type="text" name="username" id="lname" placeholder="Enter your last name">
+                            <input type="text" name="username" id="lname" placeholder="Enter your username">
                         </div>
                     </div>
                     <div class="text-fields email">

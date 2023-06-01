@@ -166,7 +166,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     width: 20px;
 }
 .text-fields.fname:after{
-    content: 'First name';
+    content: 'Your name';
     background-color: #fff;
     position: relative;
     padding: 0 4%;
@@ -177,7 +177,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     top: -33px;
 }
 .text-fields.lname:after{
-    content: 'Last name';
+    content: 'Username';
     background-color: #fff;
     position: relative;
     padding: 0 4%;
