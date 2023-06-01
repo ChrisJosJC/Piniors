@@ -45,6 +45,20 @@ class loginModel extends Model
             return false;
         }
     }
+
+    function update($datos){
+        // insertar datos en la BD
+        try {
+            $query = $this->db->connect()->prepare('UPDATE `users` SET `name`=?,`email`=?,`username`=?,`img_profile`=? WHERE ID = ?');
+            $query->execute($datos);
+            $result = $query->fetch(PDO::FETCH_ASSOC);
+            var_dump($result);
+            return $query->rowCount() > 0;
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            return false;
+        }
+    }
     public function selectUser($datos)
     {
         extract($datos);

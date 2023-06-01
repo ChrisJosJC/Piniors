@@ -37,6 +37,20 @@ class Login extends Controller
             }
     }
 
+
+    public function updatedata(){
+        extract($_POST);
+
+        $image = $_FILES["photo"];
+        $imageName = $image["name"];
+        $allows = array("jpg", "png", "webp", "jpeg", "gif");
+        $ext = explode(".", $imageName);
+        $ext = strtolower(end($ext));
+        $rand_name = explode(".", $image["tmp_name"])[0];
+        $target_image = URL . "public/img/" . basename($rand_name . "." . $ext);
+
+        if($this->model->update([$name,$email, $username,$target_image, $_SESSION["data"]["ID"]])) header("location:/dashboard");
+    }
     function updateScore(){
         $score = $_POST["score"];
         $this->model->upScore($score);
