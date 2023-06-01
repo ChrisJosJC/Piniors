@@ -51,3 +51,35 @@ Stack trace:
 #6 C:\xampp\htdocs\Piniors\index.php(22): App->__construct()
 #7 {main}
   thrown in C:\xampp\htdocs\Piniors\view\quiz\admin\funciones.php on line 116
+[01-Jun-2023 19:30:10 UTC] Hello, errors!
+[01-Jun-2023 19:30:10 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 20:44:42 UTC] Hello, errors!
+[01-Jun-2023 20:44:42 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 20:45:12 UTC] Hello, errors!
+[01-Jun-2023 20:45:12 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 20:45:13 UTC] Hello, errors!
+[01-Jun-2023 20:45:13 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 20:45:23 UTC] Hello, errors!
+[01-Jun-2023 20:45:23 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 20:45:33 UTC] Hello, errors!
+[01-Jun-2023 20:45:33 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 20:45:37 UTC] Hello, errors!
+[01-Jun-2023 20:45:37 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 20:45:39 UTC] Hello, errors!
+[01-Jun-2023 20:45:39 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 20:46:09 UTC] Hello, errors!
+[01-Jun-2023 20:46:09 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 20:51:59 UTC] Hello, errors!
+[01-Jun-2023 20:51:59 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 20:52:07 UTC] Hello, errors!
+[01-Jun-2023 20:52:07 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 20:52:08 UTC] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\Piniors\models\loginmodel.php on line 72
+[01-Jun-2023 20:52:13 UTC] Hello, errors!
+[01-Jun-2023 20:52:13 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 20:52:14 UTC] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\Piniors\models\loginmodel.php on line 72
+[01-Jun-2023 20:52:20 UTC] Hello, errors!
+[01-Jun-2023 20:52:20 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 20:52:20 UTC] PHP Warning:  Undefined array key "name" in C:\xampp\htdocs\Piniors\models\loginmodel.php on line 72
+[01-Jun-2023 21:30:14 UTC] Hello, errors!
+[01-Jun-2023 21:30:56 UTC] Hello, errors!
+[01-Jun-2023 21:31:30 UTC] Hello, errors!
