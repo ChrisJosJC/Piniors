@@ -39,7 +39,7 @@ function agregarNuevoTema($tema){
     //insertamos en la tabla temas
     if (mysqli_query($conn, $query)) { //Se insertó correctamente
         $mensaje = "El fue agregado correctamente";
-        header("Location: index.php");
+        header("Location: /quiz");
     } else {
         $mensaje = "No se pudo insertar en la BD" . mysqli_errno($conn);
     }

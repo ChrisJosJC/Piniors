@@ -37,6 +37,12 @@ class Login extends Controller
             }
     }
 
+    function updateScore(){
+        $score = $_POST["score"];
+        $this->model->upScore($score);
+        $_SESSION["data"]["score"] = $score;
+    }
+
     function logout(){
         session_destroy();
         header("location:/home");
