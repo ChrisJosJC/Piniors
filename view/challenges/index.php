@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public\styles\challege.css">
+    <link rel="stylesheet" href="/public\styles\challege.css">
     <script defer src="/public/script/challenge.js"></script>
     <title>Retos de programacion</title>
 </head>
@@ -12,8 +12,8 @@
 <?php include("view/includes/header.php") ?>
     <main>
         <aside>
-            <h1>Resuelve el siguiente programa</h1>
-            <p>Realiza una calculadora de numeros primos que busque todos los numeros segun la cantidad indicada por los usuarios.</p>
+            <h1>Escribe tus propios programas desde la web</h1>
+            <p>Deja de preocuparte por todas esos editos y comienza a desarrollar tu propio codigo desde tu navegador con Piniors. Compartelo y guardalo para siempre. </p>
         </aside>
         <div class="container">
             <textarea id="html" placeholder="HTML5">
