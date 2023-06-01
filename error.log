@@ -30,3 +30,24 @@
 [01-Jun-2023 17:29:41 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
 [01-Jun-2023 17:47:50 UTC] Hello, errors!
 [01-Jun-2023 17:47:50 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 18:10:25 UTC] Hello, errors!
+[01-Jun-2023 18:10:25 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 18:11:11 UTC] Hello, errors!
+[01-Jun-2023 18:11:11 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 18:12:03 UTC] Hello, errors!
+[01-Jun-2023 18:12:03 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 18:12:06 UTC] Hello, errors!
+[01-Jun-2023 18:12:06 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 18:12:15 UTC] Hello, errors!
+[01-Jun-2023 18:12:15 UTC] PHP Warning:  Undefined array key "level" in C:\xampp\htdocs\Piniors\libs\View.php on line 10
+[01-Jun-2023 18:12:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Table 'piniors.estadisticas' doesn't exist in C:\xampp\htdocs\Piniors\view\quiz\admin\funciones.php:116
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\view\quiz\admin\funciones.php(116): mysqli_query(Object(mysqli), 'SELECT * FROM e...')
+#1 C:\xampp\htdocs\Piniors\view\quiz\index.php(8): aumentarVisita()
+#2 C:\xampp\htdocs\Piniors\libs\View.php(11): include_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\Piniors\controllers\quiz.php(13): View->render('quiz/index')
+#4 C:\xampp\htdocs\Piniors\controllers\quiz.php(9): Quiz->home()
+#5 C:\xampp\htdocs\Piniors\libs\app.php(24): Quiz->__construct()
+#6 C:\xampp\htdocs\Piniors\index.php(22): App->__construct()
+#7 {main}
+  thrown in C:\xampp\htdocs\Piniors\view\quiz\admin\funciones.php on line 116
