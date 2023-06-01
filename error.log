@@ -1,0 +1,16 @@
+[01-Jun-2023 04:20:38 Europe/Berlin] Hello, errors!
+[01-Jun-2023 04:20:38 Europe/Berlin] PHP Warning:  Undefined array key "level" in C:\Users\LENOVO THINKPAD\Piniors\libs\View.php on line 10
+[01-Jun-2023 04:20:38 Europe/Berlin] PHP Warning:  include_once(view/archivo/index.php): Failed to open stream: No such file or directory in C:\Users\LENOVO THINKPAD\Piniors\libs\View.php on line 11
+[01-Jun-2023 04:20:38 Europe/Berlin] PHP Warning:  include_once(): Failed opening 'view/archivo/index.php' for inclusion (include_path='\xampp\php\PEAR') in C:\Users\LENOVO THINKPAD\Piniors\libs\View.php on line 11
+[01-Jun-2023 04:21:20 Europe/Berlin] Hello, errors!
+[01-Jun-2023 04:21:20 Europe/Berlin] PHP Warning:  Undefined array key "level" in C:\Users\LENOVO THINKPAD\Piniors\libs\View.php on line 10
+[01-Jun-2023 04:21:22 Europe/Berlin] Hello, errors!
+[01-Jun-2023 04:21:22 Europe/Berlin] PHP Warning:  Undefined array key "level" in C:\Users\LENOVO THINKPAD\Piniors\libs\View.php on line 10
+[01-Jun-2023 04:21:22 Europe/Berlin] Hello, errors!
+[01-Jun-2023 04:21:22 Europe/Berlin] PHP Warning:  Undefined array key "level" in C:\Users\LENOVO THINKPAD\Piniors\libs\View.php on line 10
+[01-Jun-2023 04:21:23 Europe/Berlin] Hello, errors!
+[01-Jun-2023 04:21:23 Europe/Berlin] PHP Warning:  Undefined array key "level" in C:\Users\LENOVO THINKPAD\Piniors\libs\View.php on line 10
+[01-Jun-2023 04:21:25 Europe/Berlin] Hello, errors!
+[01-Jun-2023 04:21:25 Europe/Berlin] PHP Warning:  Undefined array key "level" in C:\Users\LENOVO THINKPAD\Piniors\libs\View.php on line 10
+[01-Jun-2023 04:22:10 Europe/Berlin] Hello, errors!
+[01-Jun-2023 04:22:10 Europe/Berlin] PHP Warning:  Undefined array key "level" in C:\Users\LENOVO THINKPAD\Piniors\libs\View.php on line 10
