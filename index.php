@@ -11,20 +11,20 @@ ini_set('log_errors', TRUE); // Error/Exception file logging engine.
 ini_set("error_log", "error.log");
 error_log("Hello, errors!");
 
-// require_once 'libs/database.php';
-// require_once 'libs/Controller.php';
-// require_once 'libs/View.php';
-// require_once 'libs/Model.php';
-// require_once 'libs/app.php';
+require_once 'libs/database.php';
+require_once 'libs/Controller.php';
+require_once 'libs/View.php';
+require_once 'libs/Model.php';
+require_once 'libs/app.php';
 
-// require_once 'config/dotenv.php';
-// require_once 'config/config.php';
-// $app = new App();
+require_once 'config/dotenv.php';
+require_once 'config/config.php';
+$app = new App();
 
 ?>
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -53,4 +53,4 @@ error_log("Hello, errors!");
         }
     </style>
 </body>
-</html>
+</html> -->
