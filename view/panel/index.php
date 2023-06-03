@@ -9,22 +9,22 @@
       href="/public/favicon.svg"
       type="image/x-icon"
     />
-    <title>PlainAdmin Demo | Bootstrap 5 Admin Template</title>
+    <title>Piniors | Panel de administracion </title>
 
     <!-- ========== All CSS files linkup ========= -->
-    <link rel="stylesheet" href="/view/panel/assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/view/panel/assets/css/lineicons.css" />
-    <link rel="stylesheet" href="/view/panel/assets/css/materialdesignicons.min.css" />
-    <link rel="stylesheet" href="/view/panel/assets/css/fullcalendar.css" />
-    <link rel="stylesheet" href="/view/panel/assets/css/fullcalendar.css" />
-    <link rel="stylesheet" href="/view/panel/assets/css/main.css" />
+    <link rel="stylesheet" href="/public/styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="/public/styles/lineicons.css" />
+    <link rel="stylesheet" href="/public/styles/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="/public/styles/fullcalendar.css" />
+    <link rel="stylesheet" href="/public/styles/fullcalendar.css" />
+    <link rel="stylesheet" href="/public/styles/main.css" />
   </head>
   <body>
     <!-- ======== sidebar-nav start =========== -->
     <aside class="sidebar-nav-wrapper">
       <div class="navbar-logo">
         <a href="index.html">
-          <img src="assets/images/logo/logo.svg" alt="logo" />
+          <img src="/public/favicon.svg" alt="logo" />
         </a>
       </div>
       <nav class="sidebar-nav">
@@ -286,10 +286,10 @@
         </ul>
       </nav>
       <div class="promo-box">
-        <h3>PlainAdmin Pro</h3>
+        <h3>Piniors Pro</h3>
         <p>Get All Dashboards and 300+ UI Elements</p>
         <a
-          href="https://plainadmin.com/pro"
+          href="https://Piniors.com/pro"
           target="_blank"
           rel="nofollow"
           class="main-btn primary-btn btn-hover"
@@ -1415,11 +1415,11 @@
                 <p class="text-sm">
                   Designed and Developed by
                   <a
-                    href="https://plainadmin.com"
+                    href="https://Piniors.com"
                     rel="nofollow"
                     target="_blank"
                   >
-                    PlainAdmin
+                    Piniors
                   </a>
                 </p>
               </div>
@@ -1447,15 +1447,15 @@
     <!-- ======== main-wrapper end =========== -->
 
     <!-- ========= All Javascript files linkup ======== -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/Chart.min.js"></script>
-    <script src="assets/js/dynamic-pie-chart.js"></script>
-    <script src="assets/js/moment.min.js"></script>
-    <script src="assets/js/fullcalendar.js"></script>
-    <script src="assets/js/jvectormap.min.js"></script>
-    <script src="assets/js/world-merc.js"></script>
-    <script src="assets/js/polyfill.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/public/script/bootstrap.bundle.min.js"></script>
+    <script src="/public/script/Chart.min.js"></script>
+    <script src="/public/script/dynamic-pie-chart.js"></script>
+    <script src="/public/script/moment.min.js"></script>
+    <script src="/public/script/fullcalendar.js"></script>
+    <script src="/public/script/jvectormap.min.js"></script>
+    <script src="/public/script/world-merc.js"></script>
+    <script src="/public/script/polyfill.js"></script>
+    <script src="/public/script/main.js"></script>
 
     <script>
       // ======== jvectormap activation

@@ -9,7 +9,7 @@
       href="assets/images/favicon.svg"
       type="image/x-icon"
     />
-    <title>Button | PlainAdmin Demo</title>
+    <title>Button | Piniors Demo</title>
 
     <!-- ========== All CSS files linkup ========= -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -286,10 +286,10 @@
         </ul>
       </nav>
       <div class="promo-box">
-        <h3>PlainAdmin Pro</h3>
+        <h3>Piniors Pro</h3>
         <p>Get All Dashboards and 300+ UI Elements</p>
         <a
-          href="https://plainadmin.com/pro"
+          href="https://Piniors.com/pro"
           target="_blank"
           rel="nofollow"
           class="main-btn primary-btn btn-hover"
@@ -1274,11 +1274,11 @@
                 <p class="text-sm">
                   Designed and Developed by
                   <a
-                    href="https://plainadmin.com"
+                    href="https://Piniors.com"
                     rel="nofollow"
                     target="_blank"
                   >
-                    PlainAdmin
+                    Piniors
                   </a>
                 </p>
               </div>
