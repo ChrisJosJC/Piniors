@@ -36,8 +36,9 @@ class loginModel extends Model
             $_SESSION["level"] = 0;
             $_SESSION["username"] = $datos["username"];
             $_SESSION["email"] = $datos["email"];
-            $_SESSION["ID"] = $datos["email"];
             $_SESSION["data"] = $datos;
+
+            $this->selectUser([$datos["username"], $datos["password"]]);
             return true;
         } catch (PDOException $e) {
             // echo $e->getMessage();
@@ -52,7 +53,7 @@ class loginModel extends Model
             $query = $this->db->connect()->prepare('UPDATE `users` SET `name`=?,`email`=?,`username`=?,`img_profile`=? WHERE ID = ?');
             $query->execute($datos);
             $result = $query->fetch(PDO::FETCH_ASSOC);
-            var_dump($result);
+            $this->selectUserByID($_SESSION["ID"]);
             return $query->rowCount() > 0;
         } catch (PDOException $e) {
             echo $e->getMessage();
@@ -68,8 +69,28 @@ class loginModel extends Model
             $query->execute(["username" => $username, "password" => $password]);
             $result = $query->fetch(PDO::FETCH_ASSOC);
 
-            $_SESSION["username"] = $datos["username"];
-            $_SESSION["name"] = $datos["name"];
+            $_SESSION["username"] = $result["username"];
+            $_SESSION["name"] = $result["name"];
+            $_SESSION["email"] = $result["email"];
+            $_SESSION["ID"] = $result["name"];
+            $_SESSION["data"] = $result;
+
+            return $query->rowCount() > 0;
+        } catch (PDOException $e) {
+            // print_r($e->getMessage());
+            return false;
+        }
+    }
+    public function selectUserByID($id){
+        // insertar datos en la BD
+        try {
+            $query = $this->db->connect()->prepare('SELECT * FROM users where username = ?');
+            $query->execute([$id]);
+            $result = $query->fetch(PDO::FETCH_ASSOC);
+
+            $_SESSION["username"] = $result["username"];
+            $_SESSION["name"] = $result["name"];
+            $_SESSION["ID"] = $result["ID"];
             $_SESSION["data"] = $result;
 
             return $query->rowCount() > 0;

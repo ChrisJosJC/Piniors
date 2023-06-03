@@ -62,6 +62,14 @@ function obtenerNombreTema($id){
     
     return $tema['nombre'];
 }
+function obtenerIDTema($id){
+    include("conexion.php");
+    $query = "SELECT * FROM temas WHERE id = '$id'";
+    $result = mysqli_query($conn, $query);
+    $tema = mysqli_fetch_array($result);
+    
+    return $tema['id'];
+}
 
 function obetenerTodasLasPreguntas()
 {

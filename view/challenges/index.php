@@ -1,27 +1,10 @@
-<?php 
-
-function acortarurl($url){
-    $longitud = strlen($url);
-    if($longitud > 45){
-        $longitud = $longitud - 30;
-        $parte_inicial = substr($url, 0, -$longitud);
-        $parte_final = substr($url, -15);
-        $nueva_url = $parte_inicial."[ ... ]".$parte_final;
-        return $nueva_url;
-    }else{
-        return $url;
-    }
-}
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public\styles\challege.css">
+    <link rel="stylesheet" href="\public\styles\challege.css">
     <title>Retos de programacion</title>
 </head>
 <body>
@@ -33,22 +16,9 @@ function acortarurl($url){
             <button data-href="" id="btn-share">Compartir</button>
         </aside>
         <div class="container">
-            <textarea id="html" placeholder="HTML5">
-<h1>Preview de la pagina principal</h1>
-            </textarea>
-            <textarea id="js" placeholder="Javascript">console.log("Hola mundo")</textarea>
-            <textarea id="css" placeholder="CSS">
-h1{
-    color:#000;
-    font-family:Poppins;
-}
-body{
-    display:grid;
-    place-items:center;
-    height:100%;
-    box-sizing:border-box;
-}
-            </textarea>
+            <textarea id="html" placeholder="HTML5"></textarea>
+            <textarea id="js" placeholder="Javascript"></textarea>
+            <textarea id="css" placeholder="CSS"></textarea>
             <iframe srcdoc="" id="preview"></iframe>
         </div>
     </main>

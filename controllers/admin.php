@@ -13,7 +13,7 @@ class Admin extends Controller
     }
 
 function admin(){
-    $this->view->render("admin/index",1);
+    $this->view->render("admin/index");
 }
 
     function nuevapregunta(){
@@ -28,12 +28,21 @@ function admin(){
         $this->view->render("admin/configuracion");
     }
 
+    function editarPregunta($id){
+        $this->view->render("admin/editarpregunta");
+    }
+    function eliminarPregunta($id){
+        $this->view->render("admin/eliminarpregunta");
+    }
     function cerrarsesion(){
         $this->view->render("admin/cerrarsesion");
     }
 
     function login(){
         $this->view->render("admin/login");
+    }
+    function cambiarNombreTema(){
+        $this->model->cambiarTema($_POST);
     }
 }
 

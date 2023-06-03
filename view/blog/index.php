@@ -55,6 +55,6 @@
   <?php include('view/includes/footer.php') ?>
 
 
-  <script src="script.js"></script>
+  <script src="/public/script/admin.js"></script>
 </body>
 </html>

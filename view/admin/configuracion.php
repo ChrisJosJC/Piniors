@@ -118,7 +118,7 @@ if (isset($_GET['eliminarTodo'])) {
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <script src="/public/script/admin.js"></script>
     <script>paginaActiva(3);</script> 
 </body>
 </html>

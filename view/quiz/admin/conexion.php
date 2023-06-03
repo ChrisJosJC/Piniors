@@ -14,10 +14,5 @@ if(!$conn){
 	die("Conexión fallida:" . mysqli_connect_error());
 }
 
-//Chequeamos la conexión
-if(!$conn){
-	die("Conexión fallida:" . mysqli_connect_error());
-}
-
 ?>
 

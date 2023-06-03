@@ -103,6 +103,7 @@ function obtenerCategorias(){
     $result = mysqli_query($conn, $query);
     return $result;
 }
+
 function obtenerIdsPreguntasPorCategoria($tema){
     include("conexion.php");
     $query = "SELECT id FROM preguntas WHERE tema = $tema";
