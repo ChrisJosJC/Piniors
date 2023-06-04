@@ -57,7 +57,7 @@ if(isset($_POST['idCategoria'])){
             </div>
         </div>
         <footer>
-            <a href="/admin/login">Piniors  <i class="fa-brands fa-youtube"></i> </a>
+            <a href="/login">Piniors  <i class="fa-brands fa-youtube"></i> </a>
         </footer>
     </div>
 </body>

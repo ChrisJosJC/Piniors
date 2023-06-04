@@ -5,19 +5,18 @@ class Quiz extends Controller
     function __construct()
     {
         parent::__construct();
-        if(!isset($_SESSION["username"])) $this->view->render("login/index");
-        else if(empty($this->url[1])) $this->home();
+        if(empty($this->url[1])) $this->home();
     }
     function home()
     {
-        $this->view->render("quiz/index");
+        $this->view->render("quiz/index",1);
     }
     function jugar()
     {
-        $this->view->render("quiz/jugar");
+        $this->view->render("quiz/jugar",1);
     }
     function final()
     {
-        $this->view->render("quiz/final");
+        $this->view->render("quiz/final",1);
     }
 }

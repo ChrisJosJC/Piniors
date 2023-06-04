@@ -2,7 +2,7 @@
 
 
 //Si el usuario no esta logeado lo enviamos al login
-if (!$_SESSION['usuarioLogeado']) {
+if (!$_SESSION['username']) {
     header("Location:/login");
 }
 

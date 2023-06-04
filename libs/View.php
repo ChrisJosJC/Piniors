@@ -7,11 +7,11 @@ class View {
     }
 
     function render($name, $level=0, $redirect="login/index"){
-        if(($level == 0 && isset($_SESSION["level"]) == 0) || isset($_SESSION["level"]) ==(1||2)){
-            include_once("view/".$name.".php");
-        }else {
-            include_once("view/".$redirect.".php") ;
-        }
+        //&& isset($_SESSION["rol"]) == "admin") || isset($_SESSION["rol"]) ==(1||2)
+        if($level == 0) include_once("view/".$name.".php");
+        else if($level == 1 && isset($_SESSION["username"])) include_once("view/".$name.".php");
+        else if($level == 2 && $_SESSION["rol"] == "admin") include_once("view/".$name.".php");
+        else include_once("view/".$redirect.".php") ;
     }
 
     

@@ -72,10 +72,11 @@ class loginModel extends Model
             $_SESSION["username"] = $result["username"];
             $_SESSION["name"] = $result["name"];
             $_SESSION["email"] = $result["email"];
-            $_SESSION["ID"] = $result["name"];
+            $_SESSION["ID"] = $result["ID"];
+            $_SESSION["rol"] = $result["rol"];
             $_SESSION["data"] = $result;
 
-            return $query->rowCount() > 0;
+            return $result["rol"];
         } catch (PDOException $e) {
             // print_r($e->getMessage());
             return false;

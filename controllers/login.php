@@ -1,6 +1,6 @@
 <?php
 
-class Login extends Controller 
+class Login extends Controller
 {
     function __construct()
     {
@@ -12,12 +12,15 @@ class Login extends Controller
     {
         extract($_POST);
 
-        if ($this->model->insert
-        ([
-        'name' => $name, 
-        'username' => $username, 
-        'email'=> $email, 
-        'password'=>md5($password)])) {
+        if (
+            $this->model->insert
+            ([
+                    'name' => $name,
+                    'username' => $username,
+                    'email' => $email,
+                    'password' => md5($password)
+                ])
+        ) {
             header("location: /dashboard");
         }
     }
@@ -26,19 +29,19 @@ class Login extends Controller
         extract($_POST);
         $username = $_POST["username"];
         $password = $_POST["password"];
-        
-        if ($this->model->selectUser([
+        $rol = $this->model->selectUser([
             'username' => $username,
-            'password'=> md5($password)])) {
-                header("location:/dashboard");
+            'password' => md5($password)
+        ]);
 
-            } else {
-                // header("location:/login");
-            }
+        if ($rol == 'admin') header("location:/panel");
+        else if ($rol == 'user') header("location:/dashboard");
+        else $this->view->render("login/index");
     }
 
 
-    public function updatedata(){
+    public function updatedata()
+    {
         extract($_POST);
 
         $image = $_FILES["photo"];
@@ -49,15 +52,18 @@ class Login extends Controller
         $rand_name = explode(".", $image["tmp_name"])[0];
         $target_image = URL . "public/img/" . basename($rand_name . "." . $ext);
 
-        if($this->model->update([$name,$email, $username,$target_image, $_SESSION["data"]["ID"]])) header("location:/dashboard");
+        if ($this->model->update([$name, $email, $username, $target_image, $_SESSION["data"]["ID"]]))
+            header("location:/dashboard");
     }
-    function updateScore(){
+    function updateScore()
+    {
         $score = $_POST["score"];
         $this->model->upScore($score);
         $_SESSION["data"]["score"] = $score;
     }
 
-    function logout(){
+    function logout()
+    {
         session_destroy();
         header("location:/home");
     }
