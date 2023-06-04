@@ -7,6 +7,8 @@ class Challenges extends Controller
         parent::__construct();
         if(isset($_SESSION["username"])) $this->view->render("challenges/index");
         else $this->view->render("login/index");
+
+        $this->loadModel("activities");
     }
 
     public function token($token)

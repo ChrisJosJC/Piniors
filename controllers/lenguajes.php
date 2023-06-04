@@ -6,6 +6,8 @@ class Lenguajes extends Controller
     {
         parent::__construct();
         $this->view->render("lenguajes/index");
+        $this->loadModel("activities");
+
     }
 
 }

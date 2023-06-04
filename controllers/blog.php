@@ -8,6 +8,8 @@ class Blog extends Controller
         parent::__construct();
         if (sizeof($this->url) < 3)
             $this->view->render("blog/index");
+        $this->loadModel("activities");
+
     }
 
     function posts($title = "")

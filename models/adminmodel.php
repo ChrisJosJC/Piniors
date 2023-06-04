@@ -68,27 +68,27 @@ function aumentarVisita(){
     $query = "UPDATE estadisticas SET visitas = '$visitas' WHERE id='1'";
     $result = mysqli_query($conn, $query);
 }
-function aumentarRespondidas(){
-    include("conexion.php");
-    //Selecciono el registro de la estadistica
-    $query = "SELECT * FROM estadisticas  WHERE id='1'";
-    $result = mysqli_query($conn, $query);
-    $estadistica = mysqli_fetch_assoc($result);
-    $respondidas = $estadistica['respondidas'];
-    $respondidas = $respondidas + 1;
+// function aumentarRespondidas(){
+//     include("conexion.php");
+//     //Selecciono el registro de la estadistica
+//     $query = "SELECT * FROM estadisticas  WHERE id='1'";
+//     $result = mysqli_query($conn, $query);
+//     $estadistica = mysqli_fetch_assoc($result);
+//     $respondidas = $estadistica['respondidas'];
+//     $respondidas = $respondidas + 1;
 
-    $query = "UPDATE estadisticas SET respondidas = '$respondidas' WHERE id='1'";
-    $result = mysqli_query($conn, $query);
-}
-function aumentarCompletados(){
-    $query = "SELECT * FROM estadisticas  WHERE id='1'";
-    $result = mysqli_query($conn, $query);
-    $estadistica = mysqli_fetch_assoc($result);
-    $completados = $estadistica['completados'];
-    $completados = $completados + 1;
+//     $query = "UPDATE estadisticas SET respondidas = '$respondidas' WHERE id='1'";
+//     $result = mysqli_query($conn, $query);
+// }
+// function aumentarCompletados(){
+//     $query = "SELECT * FROM estadisticas  WHERE id='1'";
+//     $result = mysqli_query($conn, $query);
+//     $estadistica = mysqli_fetch_assoc($result);
+//     $completados = $estadistica['completados'];
+//     $completados = $completados + 1;
 
-    $query = "UPDATE estadisticas SET completados = '$completados' WHERE id='1'";
-    $result = mysqli_query($conn, $query);
-}
+//     $query = "UPDATE estadisticas SET completados = '$completados' WHERE id='1'";
+//     $result = mysqli_query($conn, $query);
+// }
 
 }
