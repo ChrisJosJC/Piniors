@@ -145,3 +145,96 @@ Stack trace:
 #1 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
 #2 {main}
   thrown in C:\xampp\htdocs\Piniors\libs\Controller.php on line 22
+[05-Jun-2023 18:11:21 UTC] PHP Warning:  Undefined array key "score" in C:\xampp\htdocs\Piniors\view\dashboard\index.php on line 36
+[05-Jun-2023 18:12:51 UTC] PHP Warning:  Undefined array key "score" in C:\xampp\htdocs\Piniors\view\dashboard\index.php on line 36
+[05-Jun-2023 18:12:56 UTC] PHP Warning:  Undefined array key "score" in C:\xampp\htdocs\Piniors\view\dashboard\index.php on line 36
+[05-Jun-2023 19:31:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Panel::users() in C:\xampp\htdocs\Piniors\libs\app.php:31
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\app.php on line 31
+[05-Jun-2023 19:40:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Panel::users() in C:\xampp\htdocs\Piniors\libs\app.php:31
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\app.php on line 31
+[05-Jun-2023 19:40:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Panel::users() in C:\xampp\htdocs\Piniors\libs\app.php:31
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\app.php on line 31
+[05-Jun-2023 19:41:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Panel::users() in C:\xampp\htdocs\Piniors\libs\app.php:31
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\app.php on line 31
+[05-Jun-2023 19:53:03 UTC] PHP Warning:  include_once(C:\xampp\htdocs\Piniors\view\panel\index.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\libs\View.php on line 14
+[05-Jun-2023 19:53:03 UTC] PHP Warning:  include_once(): Failed opening 'view/panel/index.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\libs\View.php on line 14
+[05-Jun-2023 19:53:45 UTC] PHP Warning:  include(/view/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:53:45 UTC] PHP Warning:  include(): Failed opening '/view/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:53:55 UTC] PHP Warning:  include(/view/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:53:55 UTC] PHP Warning:  include(): Failed opening '/view/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:53:55 UTC] PHP Warning:  include(/view/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:53:55 UTC] PHP Warning:  include(): Failed opening '/view/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:37 UTC] PHP Warning:  include(/view/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:37 UTC] PHP Warning:  include(): Failed opening '/view/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:38 UTC] PHP Warning:  include(/view/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:38 UTC] PHP Warning:  include(): Failed opening '/view/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:38 UTC] PHP Warning:  include(/view/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:38 UTC] PHP Warning:  include(): Failed opening '/view/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:45 UTC] PHP Warning:  include(/view/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:45 UTC] PHP Warning:  include(): Failed opening '/view/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:45 UTC] PHP Warning:  include(/view/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:45 UTC] PHP Warning:  include(): Failed opening '/view/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:45 UTC] PHP Warning:  include(/view/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:45 UTC] PHP Warning:  include(): Failed opening '/view/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:45 UTC] PHP Warning:  include(/view/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:45 UTC] PHP Warning:  include(): Failed opening '/view/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:46 UTC] PHP Warning:  include(/view/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:46 UTC] PHP Warning:  include(): Failed opening '/view/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:46 UTC] PHP Warning:  include(/view/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:46 UTC] PHP Warning:  include(): Failed opening '/view/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:46 UTC] PHP Warning:  include(/view/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:54:46 UTC] PHP Warning:  include(): Failed opening '/view/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:55:14 UTC] PHP Warning:  include(/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:55:14 UTC] PHP Warning:  include(): Failed opening '/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:55:15 UTC] PHP Warning:  include(/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:55:15 UTC] PHP Warning:  include(): Failed opening '/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:55:15 UTC] PHP Warning:  include(/panel/header.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 19:55:15 UTC] PHP Warning:  include(): Failed opening '/panel/header.php' for inclusion (include_path='.;C:\php\pear') in C:\xampp\htdocs\Piniors\view\panel\index.php on line 1
+[05-Jun-2023 20:16:56 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Panel::users-data() in C:\xampp\htdocs\Piniors\libs\app.php:31
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\app.php on line 31
+[05-Jun-2023 20:17:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Panel::users-data() in C:\xampp\htdocs\Piniors\libs\app.php:31
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\app.php on line 31
+[05-Jun-2023 20:17:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Panel::datausers() in C:\xampp\htdocs\Piniors\libs\app.php:31
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\app.php on line 31
+[05-Jun-2023 20:18:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method panelModel::getAllUsers() in C:\xampp\htdocs\Piniors\controllers\panel.php:22
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\libs\app.php(31): Panel->datausers()
+#1 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\Piniors\controllers\panel.php on line 22
+[05-Jun-2023 20:37:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Panel::users?() in C:\xampp\htdocs\Piniors\libs\app.php:31
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\app.php on line 31
+[05-Jun-2023 20:39:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Panel::users?() in C:\xampp\htdocs\Piniors\libs\app.php:31
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\app.php on line 31
+[05-Jun-2023 20:39:19 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Panel::users?() in C:\xampp\htdocs\Piniors\libs\app.php:31
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\app.php on line 31

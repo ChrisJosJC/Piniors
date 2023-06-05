@@ -13,6 +13,15 @@ class Panel extends Controller
         ob_get_clean();
         $this->view->render("panel/settings",2);
     }
+    function users(){
+        ob_get_clean();
+        $this->view->render("panel/users",2);
+    }
+    function datausers(){
+        ob_get_clean();
+        $stat = $this->model->getAllUsers();
+        echo json_encode($stat);
+    }
     function vars($id=1){
         ob_get_clean();
         $stat = $this->model->getStadistic($id);

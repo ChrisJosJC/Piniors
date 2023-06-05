@@ -2532,7 +2532,7 @@ h6,
   min-width: 150px;
 }
 .invoice-table .amount {
-  min-width: 100px;
+  min-width: 30px;
 }
 
 /* ============== Icons Css ===========*/

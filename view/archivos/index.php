@@ -12,7 +12,6 @@
 
 <body>
   <?php include("view/includes/header.php") ?>
-
   <form action="/blog/uploadArticle" method="POST" enctype="multipart/form-data">
     <h1>Ingresa tu articulo en Markdown</h1>
     <input placeholder="Ingresa el titulo de tu articulo" type="text" name="title" id="title">

@@ -47,7 +47,7 @@
     align-items: center;
   }
   
-  .logo h1 b {
+  .logo h1 b a {
     color: white;
   }
   
@@ -79,6 +79,10 @@
   .menu nav ul li a {
     color: #f0eded;
     transition: color 300ms;
+  }
+
+  .fa-right-from-bracket{
+    color: #DDA15E;
   }
 
   

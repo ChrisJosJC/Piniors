@@ -32,6 +32,18 @@ class panelModel extends Model
             return false;
         }
     }
+    public function getAllUsers(){
+        try {
+            //Estadistica
+            $query = $this->db->connect()->prepare("SELECT * FROM users");
+            $query->execute();
+            $result = $query->fetchAll(PDO::FETCH_ASSOC);
+            return $result;
+        } catch (PDOException $e) {
+            print_r($e->getMessage());
+            return false;
+        }
+    }
 }
 
 ?>
