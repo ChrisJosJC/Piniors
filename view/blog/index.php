@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog</title>
   <link rel="stylesheet" href="/public/styles/blog.css">
-  <link rel="shortcut icon" href="/public/favicon.svg" type="image/x-icon">   
+  <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">   
 </head>
 <body>
   <?php include("view/includes/header.php") ?>

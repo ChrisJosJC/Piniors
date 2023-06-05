@@ -65,8 +65,8 @@ class loginModel extends Model
         extract($datos);
         // insertar datos en la BD
         try {
-            $query = $this->db->connect()->prepare('SELECT * FROM users where username = :username and password = :password');
-            $query->execute(["username" => $username, "password" => $password]);
+            $query = $this->db->connect()->prepare('SELECT * FROM users where username = ? and password = ?');
+            $query->execute([$username,$password]);
             $result = $query->fetch(PDO::FETCH_ASSOC);
 
             $_SESSION["username"] = $result["username"];
@@ -78,7 +78,7 @@ class loginModel extends Model
 
             return $result["rol"];
         } catch (PDOException $e) {
-            // print_r($e->getMessage());
+        //     throw new ErrorException($e->getMessage());
             return false;
         }
     }
@@ -92,6 +92,7 @@ class loginModel extends Model
             $_SESSION["username"] = $result["username"];
             $_SESSION["name"] = $result["name"];
             $_SESSION["ID"] = $result["ID"];
+            $_SESSION["rol"] = $result["rol"];
             $_SESSION["data"] = $result;
 
             return $query->rowCount() > 0;

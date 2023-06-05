@@ -22,7 +22,7 @@
     <!-- ======== sidebar-nav start =========== -->
     <aside class="sidebar-nav-wrapper">
       <div class="navbar-logo">
-        <a href="index.html">
+        <a href="index.php">
           <img src="assets/images/logo/logo.svg" alt="logo" />
         </a>
       </div>
@@ -49,7 +49,7 @@
             </a>
             <ul id="ddmenu_1" class="collapse dropdown-nav">
               <li>
-                <a href="index.html"> eCommerce </a>
+                <a href="index.php"> eCommerce </a>
               </li>
             </ul>
           </li>
@@ -80,15 +80,15 @@
             </a>
             <ul id="ddmenu_2" class="collapse dropdown-nav">
               <li>
-                <a href="settings.html"> Settings </a>
+                <a href="settings.php"> Settings </a>
               </li>
               <li>
-                <a href="blank-page.html"> Blank Page </a>
+                <a href="blank-page.php"> Blank Page </a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="invoice.html">
+            <a href="invoice.php">
               <span class="icon">
                 <svg
                   width="22"
@@ -132,10 +132,10 @@
             </a>
             <ul id="ddmenu_3" class="collapsed show dropdown-nav">
               <li>
-                <a href="signin.html"> Sign In </a>
+                <a href="signin.php"> Sign In </a>
               </li>
               <li>
-                <a href="signup.html" class="active"> Sign Up </a>
+                <a href="signup.php" class="active"> Sign Up </a>
               </li>
             </ul>
           </li>
@@ -167,16 +167,16 @@
             </a>
             <ul id="ddmenu_4" class="collapse dropdown-nav">
               <li>
-                <a href="alerts.html"> Alerts </a>
+                <a href="alerts.php"> Alerts </a>
               </li>
               <li>
-                <a href="buttons.html"> Buttons </a>
+                <a href="buttons.php"> Buttons </a>
               </li>
               <li>
-                <a href="cards.html"> Cards </a>
+                <a href="cards.php"> Cards </a>
               </li>
               <li>
-                <a href="typography.html"> Typography </a>
+                <a href="typography.php"> Typography </a>
               </li>
             </ul>
           </li>
@@ -207,10 +207,10 @@
             </a>
             <ul id="ddmenu_55" class="collapse dropdown-nav">
               <li>
-                <a href="icons.html"> LineIcons </a>
+                <a href="icons.php"> LineIcons </a>
               </li>
               <li>
-                <a href="mdi-icons.html"> MDI Icons </a>
+                <a href="mdi-icons.php"> MDI Icons </a>
               </li>
             </ul>
           </li>
@@ -241,12 +241,12 @@
             </a>
             <ul id="ddmenu_5" class="collapse dropdown-nav">
               <li>
-                <a href="form-elements.html"> Form Elements </a>
+                <a href="form-elements.php"> Form Elements </a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
-            <a href="tables.html">
+            <a href="tables.php">
               <span class="icon">
                 <svg
                   width="22"
@@ -266,7 +266,7 @@
           <span class="divider"><hr /></span>
 
           <li class="nav-item">
-            <a href="notification.html">
+            <a href="notification.php">
               <span class="icon">
                 <svg
                   width="22"
@@ -656,7 +656,7 @@
                       </button>
                     </div>
                     <p class="text-sm text-medium text-dark text-center">
-                      Already have an account? <a href="signin.html">Sign In</a>
+                      Already have an account? <a href="signin.php">Sign In</a>
                     </p>
                   </div>
                 </div>

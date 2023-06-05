@@ -38,6 +38,19 @@ class activitiesModel extends Model
         $query->execute([$visitas, $id]);
         // $result = $query->fetch(PDO::FETCH_ASSOC);
     }
+
+    public function updateScore($puntos=0){
+        $id = $_SESSION["ID"];
+        $query = $this->db->connect()->prepare("SELECT * FROM users WHERE id=?");
+        $query->execute([$id]);
+        $users = $query->fetch(PDO::FETCH_ASSOC);
+        $score = $users['score'];
+        $score = $score + $puntos;
+        $_SESSION["data"]["score"] = $score;
+    
+        $query = $this->db->connect()->prepare("UPDATE users SET score = ? WHERE id=?");
+        $query->execute([$score, $id]);
+    }
     
 }
 

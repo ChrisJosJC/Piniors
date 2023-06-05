@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="<?php echo constant("URL") ?>public/styles/home.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="shortcut icon" href="<?php echo constant("URL") ?>public/favicon.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">   
+
     <meta property="og:title" content="Piniors">
 <meta property="og:type" content="page" />
 <meta property="og:description" content="No seas un pino para siempre!">

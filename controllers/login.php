@@ -5,6 +5,7 @@ class Login extends Controller
     function __construct()
     {
         parent::__construct();
+        ob_start();
         $this->view->render("login/index");
     }
 
@@ -26,6 +27,7 @@ class Login extends Controller
     }
     function login()
     {
+        ob_clean();
         extract($_POST);
         $username = $_POST["username"];
         $password = $_POST["password"];
@@ -34,9 +36,14 @@ class Login extends Controller
             'password' => md5($password)
         ]);
 
-        if ($rol == 'admin') header("location:/panel");
-        else if ($rol == 'user') header("location:/dashboard");
-        else $this->view->render("login/index");
+        if ($rol == "admin") {
+            header("location: /panel");
+        } else if ($rol == 'user') {
+            header("location: /dashboard");
+        } else {
+            header("location: /login");
+            echo "Not";
+        }
     }
 
 
@@ -65,6 +72,6 @@ class Login extends Controller
     function logout()
     {
         session_destroy();
-        header("location:/home");
+        header("location:/login");
     }
 }

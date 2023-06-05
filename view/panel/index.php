@@ -5,7 +5,8 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="/public/favicon.svg" type="image/x-icon" />
+  <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon">   
+
   <title>Piniors | Panel de administracion </title>
 
   <!-- ========== All CSS files linkup ========= -->
@@ -21,8 +22,8 @@
   <!-- ======== sidebar-nav start =========== -->
   <aside class="sidebar-nav-wrapper">
     <div class="navbar-logo">
-      <a href="index.html">
-        <img src="/public/favicon.svg" alt="logo" />
+      <a href="index.php">
+        <img src="/public/favicon.svg" width="70%" alt="logo" />
       </a>
     </div>
     <nav class="sidebar-nav">
@@ -40,7 +41,7 @@
           </a>
           <ul id="ddmenu_1" class="collapse show dropdown-nav">
             <li>
-              <a href="index.html" class="active"> Piniors </a>
+              <a href="index.php" class="active"> Piniors </a>
             </li>
           </ul>
         </li>
@@ -57,15 +58,15 @@
           </a>
           <ul id="ddmenu_2" class="collapse dropdown-nav">
             <li>
-              <a href="settings.html"> Settings </a>
+              <a href="settings.php"> Settings </a>
             </li>
             <li>
-              <a href="blank-page.html"> Blank Page </a>
+              <a href="blank-page.php"> Blank Page </a>
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a href="invoice.html">
+          <a href="invoice.php">
             <span class="icon">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -88,10 +89,10 @@
           </a>
           <ul id="ddmenu_3" class="collapse dropdown-nav">
             <li>
-              <a href="signin.html"> Sign In </a>
+              <a href="signin.php"> Sign In </a>
             </li>
             <li>
-              <a href="signup.html"> Sign Up </a>
+              <a href="signup.php"> Sign Up </a>
             </li>
           </ul>
         </li>
@@ -111,16 +112,16 @@
           </a>
           <ul id="ddmenu_4" class="collapse dropdown-nav">
             <li>
-              <a href="alerts.html"> Alerts </a>
+              <a href="alerts.php"> Alerts </a>
             </li>
             <li>
-              <a href="buttons.html"> Buttons </a>
+              <a href="buttons.php"> Buttons </a>
             </li>
             <li>
-              <a href="cards.html"> Cards </a>
+              <a href="cards.php"> Cards </a>
             </li>
             <li>
-              <a href="typography.html"> Typography </a>
+              <a href="typography.php"> Typography </a>
             </li>
           </ul>
         </li>
@@ -137,10 +138,10 @@
           </a>
           <ul id="ddmenu_55" class="collapse dropdown-nav">
             <li>
-              <a href="icons.html"> LineIcons </a>
+              <a href="icons.php"> LineIcons </a>
             </li>
             <li>
-              <a href="mdi-icons.html"> MDI Icons </a>
+              <a href="mdi-icons.php"> MDI Icons </a>
             </li>
           </ul>
         </li>
@@ -157,12 +158,12 @@
           </a>
           <ul id="ddmenu_5" class="collapse dropdown-nav">
             <li>
-              <a href="form-elements.html"> From Elements </a>
+              <a href="form-elements.php"> From Elements </a>
             </li>
           </ul>
         </li>
         <li class="nav-item">
-          <a href="tables.html">
+          <a href="tables.php">
             <span class="icon">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -177,7 +178,7 @@
         </span>
 
         <li class="nav-item">
-          <a href="notification.html">
+          <a href="notification.php">
             <span class="icon">
               <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -429,8 +430,8 @@
                 <i class="lni lni-dollar"></i>
               </div>
               <div class="content">
-                <h6 class="mb-10">Usuarios</h6>
-                <h3 class="text-bold mb-10" id="cantUsers"></h3>
+                <h6 class="mb-10">Keyboard</h6>
+                <h3 class="text-bold mb-10" id="keyboard"></h3>
                 <p class="text-sm text-success">
                   <i class="lni lni-arrow-up"></i> +5.45%
                   <span class="text-gray">Increased</span>
@@ -464,7 +465,7 @@
               </div>
               <div class="content">
                 <h6 class="mb-10">New User</h6>
-                <h3 class="text-bold mb-10">34567</h3>
+                <h3 class="text-bold mb-10" id="cantUsers"></h3>
                 <p class="text-sm text-danger">
                   <i class="lni lni-arrow-down"></i> -25.00%
                   <span class="text-gray"> Earning</span>

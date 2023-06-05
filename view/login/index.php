@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <?php include("view/includes/header.php") ?>
+    <?php include("view/includes/header.php"); ?>
     <div class="container">
         <div class="login-link">
             <div class="logo">
@@ -37,7 +37,7 @@
             <input type="submit" value="Login" class="nextPage">
         </form>
     </div>
-        <?php include("view/includes/footer.php") ?>
+    <?php include("view/includes/footer.php"); ?>
 </body>
 <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 

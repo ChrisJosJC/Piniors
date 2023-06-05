@@ -6,8 +6,7 @@ class Panel extends Controller
     {
         parent::__construct();
         ob_start();
-        if(isset($_SESSION["username"])) $this->view->render("panel/index");
-        else $this->view->render("login/index",2);
+        $this->view->render("panel/index",2);
     }
 
     function vars($id=1){

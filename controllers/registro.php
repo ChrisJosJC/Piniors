@@ -5,11 +5,13 @@ class Registro extends Controller
     function __construct()
     {
         parent::__construct();
+        ob_start();
         $this->view->render("registro/index");
     }
 
     function registro()
     {
+        ob_clean();
         extract($_POST);
 
         if ($password != $confirmpassword) {
