@@ -54,14 +54,20 @@
                   d="M12.8334 1.83325H5.50008C5.01385 1.83325 4.54754 2.02641 4.20372 2.37022C3.8599 2.71404 3.66675 3.18036 3.66675 3.66659V18.3333C3.66675 18.8195 3.8599 19.2858 4.20372 19.6296C4.54754 19.9734 5.01385 20.1666 5.50008 20.1666H16.5001C16.9863 20.1666 17.4526 19.9734 17.7964 19.6296C18.1403 19.2858 18.3334 18.8195 18.3334 18.3333V7.33325L12.8334 1.83325ZM16.5001 18.3333H5.50008V3.66659H11.9167V8.24992H16.5001V18.3333Z" />
               </svg>
             </span>
-            <span class="text">Games</span>
+            <span class="text">Actividades</span>
           </a>
           <ul id="ddmenu_2" class="collapse dropdown-nav">
             <li>
-              <a href="settings.php"> Settings </a>
+              <a href="/quiz"> Quiz </a>
             </li>
             <li>
-              <a href="blank-page.php"> Blank Page </a>
+              <a href="/memoria"> Memoria </a>
+            </li>
+            <li>
+              <a href="/challenges"> Editor </a>
+            </li>
+            <li>
+              <a href="/keyboard"> Keyboard </a>
             </li>
           </ul>
         </li>
@@ -430,8 +436,8 @@
                 <i class="lni lni-dollar"></i>
               </div>
               <div class="content">
-                <h6 class="mb-10">Keyboard</h6>
-                <h3 class="text-bold mb-10" id="keyboard"></h3>
+                <h6 class="mb-10">Editor</h6>
+                <h3 class="text-bold mb-10" id="editor"></h3>
                 <p class="text-sm text-success">
                   <i class="lni lni-arrow-up"></i> +5.45%
                   <span class="text-gray">Increased</span>
@@ -447,8 +453,8 @@
                 <i class="lni lni-credit-cards"></i>
               </div>
               <div class="content">
-                <h6 class="mb-10">Total Expense</h6>
-                <h3 class="text-bold mb-10">$24,567</h3>
+                <h6 class="mb-10">Memoria</h6>
+                <h3 class="text-bold mb-10" id="memory"></h3>
                 <p class="text-sm text-danger">
                   <i class="lni lni-arrow-down"></i> -2.00%
                   <span class="text-gray">Expense</span>
@@ -464,7 +470,7 @@
                 <i class="lni lni-user"></i>
               </div>
               <div class="content">
-                <h6 class="mb-10">New User</h6>
+                <h6 class="mb-10">Usuarios registrados</h6>
                 <h3 class="text-bold mb-10" id="cantUsers"></h3>
                 <p class="text-sm text-danger">
                   <i class="lni lni-arrow-down"></i> -25.00%
@@ -482,16 +488,16 @@
             <div class="card-style mb-30">
               <div class="title d-flex flex-wrap justify-content-between">
                 <div class="left">
-                  <h6 class="text-medium mb-10">Yearly subscription</h6>
-                  <h3 class="text-bold">$245,479</h3>
+                  <h6 class="text-medium mb-10">Total de visitas</h6>
+                  <h3 class="text-bold" id ="totalVisitas"></h3>
                 </div>
                 <div class="right">
                   <div class="select-style-1">
                     <div class="select-position select-sm">
-                      <select class="light-bg">
-                        <option value="">Yearly</option>
-                        <option value="">Monthly</option>
-                        <option value="">Weekly</option>
+                    <select class="light-bg">
+                        <option value="">Total</option>
+                        <!-- <option value="">Monthly</option> -->
+                        <!-- <option value="">Weekly</option> -->
                       </select>
                     </div>
                   </div>
@@ -590,6 +596,9 @@
   <script>
     let cantUsers = document.getElementById("cantUsers")
     let visitas = document.getElementById("visitas")
+    let memory = document.getElementById("memory")
+    let editor = document.getElementById("editor")
+    let total = document.getElementById("totalVisitas")
     let visits = []
 
     fetch("/panel/vars")
@@ -667,7 +676,10 @@
       .then(res => res.json())
       .then(data => {
         visits = data
-        console.log(visits)
+        editor.textContent =data[1]
+        memory.textContent =data[2]
+        const allVisits = data.reduce((a, b) => a + b, 0);
+        total.textContent = allVisits
         const ctx1 = document.getElementById("Chart1").getContext("2d");
         const chart1 = new Chart(ctx1, {
           type: "line",

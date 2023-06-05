@@ -12,11 +12,12 @@
     <title>Settings | Piniors Demo</title>
 
     <!-- ========== All CSS files linkup ========= -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/lineicons.css" />
-    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css" />
-    <link rel="stylesheet" href="assets/css/fullcalendar.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="/public/styles/bootstrap.min.css" />
+  <link rel="stylesheet" href="/public/styles/lineicons.css" />
+  <link rel="stylesheet" href="/public/styles/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="/public/styles/fullcalendar.css" />
+  <link rel="stylesheet" href="/public/styles/fullcalendar.css" />
+  <link rel="stylesheet" href="/public/styles/main.css" />
   </head>
   <body>
     <!-- ======== sidebar-nav start =========== -->
@@ -80,7 +81,7 @@
             </a>
             <ul id="ddmenu_2" class="collapsed show dropdown-nav">
               <li>
-                <a href="settings.php" class="active"> Settings </a>
+                <a href="/panel/settings" class="active"> Settings </a>
               </li>
               <li>
                 <a href="blank-page.php"> Blank Page </a>
@@ -725,14 +726,15 @@ Crafted for – Business, Startup, SaaS, Apps, Event, Software, Agency, Resume a
     <!-- ======== main-wrapper end =========== -->
 
     <!-- ========= All Javascript files linkup ======== -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/Chart.min.js"></script>
-    <script src="assets/js/dynamic-pie-chart.js"></script>
-    <script src="assets/js/moment.min.js"></script>
-    <script src="assets/js/fullcalendar.js"></script>
-    <script src="assets/js/jvectormap.min.js"></script>
-    <script src="assets/js/world-merc.js"></script>
-    <script src="assets/js/polyfill.js"></script>
-    <script src="assets/js/main.js"></script>
+  <script src="/public/script/bootstrap.bundle.min.js"></script>
+  <script src="/public/script/Chart.min.js"></script>
+  <script src="/public/script/dynamic-pie-chart.js"></script>
+  <script src="/public/script/moment.min.js"></script>
+  <script src="/public/script/fullcalendar.js"></script>
+  <script src="/public/script/jvectormap.min.js"></script>
+  <script src="/public/script/world-merc.js"></script>
+  <script src="/public/script/polyfill.js"></script>
+  <script src="/public/script/main.js"></script>
+
   </body>
 </html>

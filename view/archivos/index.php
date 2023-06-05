@@ -19,9 +19,14 @@
     <textarea placeholder="Ingresa la descripcion del articulo" name="descripcion" id="descripcion"
       maxlength="170"></textarea>
     <label for="images" class="drop-container">
+      <span class="drop-title">Suelta tu portada aqui</span>
+      or
+      <input type="file" id="images" accept=".jpg,.png,.webp,.jpeg" name="archivo" required>
+    </label>
+    <label for="images" class="drop-container">
       <span class="drop-title">Suelta tu articulo aqui</span>
       or
-      <input type="file" id="images" accept=".md" name="archivo" required>
+      <input type="file" id="archivo" accept=".md" name="archivo" required>
     </label>
     <button id="submit" type="submit">Subir articulo</button>
   </form>

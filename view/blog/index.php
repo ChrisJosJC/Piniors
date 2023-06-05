@@ -19,7 +19,7 @@
       <h2 class="section-title">Artículos destacados</h2>
 
       <div class="post">
-        <img src="https://www.oberlo.com/media/1603954182-seo-article-header.png?fit=max&fm=webp&w=1824" alt="Post 1" class="post-image">
+        <img src="/public/img/bg-dahboard.jpg" alt="Post 1" class="post-image">
         <h3 class="post-title">Mejorando el posicionamiento web: Guía de SEO para desarrolladores web</h3>
         <p class="post-excerpt">Aquí encontrarás algunos consejos y buenas prácticas para que tus proyectos web sean más amigables para los motores de búsqueda y obtengan una mejor visibilidad en línea.</p>
         <a href="/blog/posts/seo" class="post-link">Leer más</a>

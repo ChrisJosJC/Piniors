@@ -96,3 +96,52 @@ Stack trace:
 [05-Jun-2023 03:36:14 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\Piniors\view\login\index.php:41) in C:\xampp\htdocs\Piniors\controllers\login.php on line 73
 [05-Jun-2023 03:36:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\Piniors\view\login\index.php:41) in C:\xampp\htdocs\Piniors\controllers\login.php on line 73
 [05-Jun-2023 03:37:03 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\Piniors\view\login\index.php:41) in C:\xampp\htdocs\Piniors\controllers\login.php on line 38
+[05-Jun-2023 12:20:10 UTC] PHP Warning:  Undefined array key "rol" in C:\xampp\htdocs\Piniors\libs\View.php on line 14
+[05-Jun-2023 12:21:59 UTC] PHP Warning:  Undefined array key "rol" in C:\xampp\htdocs\Piniors\libs\View.php on line 14
+[05-Jun-2023 13:46:35 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\Piniors\view\includes\footer.php:1) in C:\xampp\htdocs\Piniors\controllers\blog.php on line 64
+[05-Jun-2023 13:46:44 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Blog::final() in C:\xampp\htdocs\Piniors\libs\app.php:31
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\app.php on line 31
+[05-Jun-2023 13:46:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Blog::quimica() in C:\xampp\htdocs\Piniors\libs\app.php:31
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#1 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\app.php on line 31
+[05-Jun-2023 16:03:42 UTC] PHP Fatal error:  Uncaught Error: Class "blogModel" not found in C:\xampp\htdocs\Piniors\libs\Controller.php:22
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\libs\app.php(25): Controller->loadModel('blog')
+#1 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\Controller.php on line 22
+[05-Jun-2023 16:04:08 UTC] PHP Fatal error:  Uncaught Error: Class "blogModel" not found in C:\xampp\htdocs\Piniors\libs\Controller.php:22
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\libs\app.php(25): Controller->loadModel('blog')
+#1 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\Controller.php on line 22
+[05-Jun-2023 16:04:15 UTC] PHP Fatal error:  Uncaught Error: Class "blogModel" not found in C:\xampp\htdocs\Piniors\libs\Controller.php:22
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\libs\app.php(25): Controller->loadModel('blog')
+#1 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\Controller.php on line 22
+[05-Jun-2023 16:04:38 UTC] PHP Fatal error:  Uncaught Error: Class "blogModel" not found in C:\xampp\htdocs\Piniors\libs\Controller.php:22
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\libs\app.php(25): Controller->loadModel('blog')
+#1 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\Controller.php on line 22
+[05-Jun-2023 16:05:39 UTC] PHP Fatal error:  Uncaught Error: Class "blogModel" not found in C:\xampp\htdocs\Piniors\libs\Controller.php:22
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\libs\app.php(25): Controller->loadModel('blog')
+#1 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\Controller.php on line 22
+[05-Jun-2023 16:13:32 UTC] PHP Fatal error:  Uncaught Error: Class "blogModel" not found in C:\xampp\htdocs\Piniors\libs\Controller.php:22
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\libs\app.php(25): Controller->loadModel('blog')
+#1 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#2 {main}
+  thrown in C:\xampp\htdocs\Piniors\libs\Controller.php on line 22
