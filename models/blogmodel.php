@@ -1,6 +1,6 @@
 <?php
 
-class adminModel extends Model
+class blogModel extends Model
 {
 
     public function __construct()

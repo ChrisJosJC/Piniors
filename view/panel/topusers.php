@@ -9,7 +9,7 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <div class="title d-flex align-items-center flex-wrap mb-30">
-              <h2 class="mr-40">Todos los usuarios</h2>
+              <h2 class="mr-40">Top usuarios</h2>
             </div>
           </div>
           <!-- end col -->
@@ -129,7 +129,7 @@
 
 <script>
   const row = document.getElementById("row")
-  fetch("/panel/datausers")
+  fetch("/panel/datauserstop")
   .then(res => res.json())
   .then(data => {
     data.forEach(element => {

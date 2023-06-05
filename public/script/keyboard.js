@@ -70,15 +70,21 @@ function initTimer() {
         let wpm = Math.round(((charIndex - mistakes)  / 5) / (maxTime - timeLeft) * 60);
         wpmTag.innerText = wpm;
     } else {
-        clearInterval(timer);
-        // TODO: Mandar los ultimo cambios al servidor
-        const score = charIndex - mistakes
+                // TODO: Mandar los ultimo cambios al servidor
+        let wpm = Math.round(((charIndex - mistakes)  / 5) / (maxTime - timeLeft) * 60);
+
+        const score = wpm
         let body = new FormData()
         body.append("score",score)
         fetch("/keyboard/addScore",{
             method: "POST",
             body
         })
+        .then(res => res.text())
+        .then(data => console.log(data))
+
+        console.log("Se acabaron los procesos!")
+        clearInterval(timer);
     }
 }
 

@@ -22,7 +22,7 @@
   <!-- ======== sidebar-nav start =========== -->
   <aside class="sidebar-nav-wrapper">
     <div class="navbar-logo">
-      <a href="index.php">
+      <a href="/">
         <img src="/public/favicon.svg" width="70%" alt="logo" />
       </a>
     </div>
@@ -41,7 +41,7 @@
           </a>
           <ul id="ddmenu_1" class="collapse show dropdown-nav">
             <li>
-              <a href="index.php" class="active"> Piniors </a>
+              <a href="/" class="active"> Piniors </a>
             </li>
           </ul>
         </li>
@@ -145,8 +145,8 @@
                         <img src="assets/images/lead/lead-6.png" alt="" />
                       </div>
                       <div class="content">
-                        <h6>
-                          John Doe
+                        <h6 class="user-name">
+                          <?php echo $_SESSION["name"] ?>
                           <span class="text-regular">
                             comment on a product.
                           </span>
@@ -191,9 +191,9 @@
                   data-bs-toggle="dropdown" aria-expanded="false">
                   <div class="profile-info">
                     <div class="info">
-                      <h6>John Doe</h6>
+                      <h6 class="user-name"><?php echo $_SESSION["name"] ?></h6>
                       <div class="image">
-                        <img src="assets/images/profile/profile-image.png" alt="" />
+                        <img src="<?php echo $_SESSION["data"]["img_profile"] ?>" alt="" />
                         <span class="status"></span>
                       </div>
                     </div>
@@ -202,23 +202,13 @@
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
                   <li>
-                    <a href="#0">
-                      <i class="lni lni-user"></i> View Profile
-                    </a>
+                    <a href="/actividades"> <i class="lni lni-inbox"></i> Actividades </a>
                   </li>
                   <li>
-                    <a href="#0">
-                      <i class="lni lni-alarm"></i> Notifications
-                    </a>
+                    <a href="/panel/users"> <i class="lni lni-cog"></i> Users </a>
                   </li>
                   <li>
-                    <a href="#0"> <i class="lni lni-inbox"></i> Messages </a>
-                  </li>
-                  <li>
-                    <a href="#0"> <i class="lni lni-cog"></i> Settings </a>
-                  </li>
-                  <li>
-                    <a href="#0"> <i class="lni lni-exit"></i> Sign Out </a>
+                    <a href="/login/logout"> <i class="lni lni-exit"></i> Sign Out </a>
                   </li>
                 </ul>
               </div>

@@ -13,6 +13,8 @@
 
 <?php
 
+require_once "dotenv.php";
+
 (new DotEnv(__DIR__.'/.env'))->load();
 
 define('URL', getenv("URL"));

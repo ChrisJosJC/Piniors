@@ -17,9 +17,18 @@ class Panel extends Controller
         ob_get_clean();
         $this->view->render("panel/users",2);
     }
+    function topusers(){
+        ob_get_clean();
+        $this->view->render("panel/topusers",2);
+    }
     function datausers(){
         ob_get_clean();
         $stat = $this->model->getAllUsers();
+        echo json_encode($stat);
+    }
+    function datauserstop(){
+        ob_get_clean();
+        $stat = $this->model->getAllTopUsers();
         echo json_encode($stat);
     }
     function vars($id=1){
