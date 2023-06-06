@@ -37,6 +37,14 @@
                         <a href="/memoria">Ver más</a>
         </article>
     </section>
+    <section id="keyboard">
+        <article>
+            <h2>Test de escritura</h2>
+                        <p>Descubre tu numero de palabra por minutos con este sencillo, pero provechoso juego en el que necesitas escribir lo más rapido que puedas sin cometer errores.
+                        </p>
+                        <a href="/keybaord">Ver más</a>
+        </article>
+    </section>
     <a id="nav-btn" href="#retos">Siguiente</a>
 </body>
 
