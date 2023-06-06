@@ -4,8 +4,8 @@
 
 body{
   padding-top: 80px;
-  overflow-x: hidden;
   background-color: rgb(40, 67, 40);
+  overflow-x: hidden;
 }
 
 
@@ -15,7 +15,7 @@ body{
   color: white;
 }
 .heading-one{
-  font-size: 3rem;
+  text-align:center;
   z-index: 10;
 }
 .heading-one span{
@@ -24,7 +24,7 @@ body{
 .heading-one b{
   color: var(--naranja-claro);
   display: block;
-  font-size: 10rem;
+  font-size: 15vw;
   margin-top: 20px;
   text-decoration: underline;
   text-shadow: 2px 2px;
@@ -40,7 +40,7 @@ body{
   padding: 10px 7px;
   color: var(--verde);
   font-weight: 900;
-  font-size: 1em;
+  font-size: clip;
   z-index: 20;
 }
 
@@ -76,6 +76,7 @@ section.info h2{
   margin: 10px 0;
 }
 section.info img{
+  width: 100%;
   box-shadow: 5px 4px 6px #8b8989b9;
 }
 .care{

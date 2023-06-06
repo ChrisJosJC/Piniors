@@ -22,7 +22,7 @@
     width: 100%;
     height: 80px;
     background-color: rgb(40, 67, 40);
-    z-index: 2;
+    z-index: 21;
   }
   
   body {
@@ -197,4 +197,55 @@
 
 ul {
   list-style: none;
+}
+
+#myLinks {
+  display: none;
+  position: sticky;
+  top: 80px;
+  z-index: 21;
+}
+
+#myLinks a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: rgb(40, 67, 40);
+}
+
+a.icon {
+  display: none;
+  color: white;
+  padding: 10px;
+  height: 100%;
+  width: 50px;
+  font-size: 1rem;
+  text-align: center;
+  position: absolute;
+  align-items: center;
+  right: 0;
+  top: 0;
+}
+
+#myLinks a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+@media screen and (max-width:600px) {
+  a.icon{
+      display: flex;
+  }
+  .menu{
+      display: none;
+  }
 }
