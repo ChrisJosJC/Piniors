@@ -60,17 +60,7 @@ function initTyping() {
     } else {
         clearInterval(timer);
         inpField.value = "";
-    }   
-}
-
-function initTimer() {
-    if(timeLeft > 0) {
-        timeLeft--;
-        timeTag.innerText = timeLeft;
-        let wpm = Math.round(((charIndex - mistakes)  / 5) / (maxTime - timeLeft) * 60);
-        wpmTag.innerText = wpm;
-    } else {
-                // TODO: Mandar los ultimo cambios al servidor
+        console.log("Se acabaron los procesos!")
         let wpm = Math.round(((charIndex - mistakes)  / 5) / (maxTime - timeLeft) * 60);
 
         const score = wpm
@@ -81,9 +71,18 @@ function initTimer() {
             body
         })
         .then(res => res.text())
-        .then(data => console.log(data))
+        .catch(e => console.error(e))
+    }   
+}
 
-        console.log("Se acabaron los procesos!")
+function initTimer() {
+    if(timeLeft > 0) {
+        timeLeft--;
+        timeTag.innerText = timeLeft;
+        let wpm = Math.round(((charIndex - mistakes)  / 5) / (maxTime - timeLeft) * 60);
+        wpmTag.innerText = wpm;
+    } else {
+        // TODO: Mandar los ultimo cambios al servidor
         clearInterval(timer);
     }
 }

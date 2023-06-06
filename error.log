@@ -1,0 +1,48 @@
+[06-Jun-2023 01:26:26 UTC] PHP Fatal error:  Uncaught Error: Attempt to assign property "res_0" on array in C:\xampp\htdocs\Piniors\view\quiz\jugar.php:28
+Stack trace:
+#0 C:\xampp\htdocs\Piniors\libs\View.php(13): include_once()
+#1 C:\xampp\htdocs\Piniors\controllers\quiz.php(16): View->render('quiz/jugar', 1)
+#2 C:\xampp\htdocs\Piniors\libs\app.php(31): Quiz->jugar()
+#3 C:\xampp\htdocs\Piniors\index.php(21): App->__construct()
+#4 {main}
+  thrown in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 28
+[06-Jun-2023 01:30:35 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 75
+[06-Jun-2023 01:30:35 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 75
+[06-Jun-2023 01:30:35 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\admin\funciones.php on line 63
+[06-Jun-2023 01:30:35 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 84
+[06-Jun-2023 01:30:35 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 84
+[06-Jun-2023 01:30:35 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 89
+[06-Jun-2023 01:30:35 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 89
+[06-Jun-2023 01:30:35 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 93
+[06-Jun-2023 01:30:35 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 93
+[06-Jun-2023 01:30:35 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 97
+[06-Jun-2023 01:30:35 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 97
+[06-Jun-2023 01:35:48 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 77
+[06-Jun-2023 01:35:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 77
+[06-Jun-2023 01:35:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\admin\funciones.php on line 63
+[06-Jun-2023 01:35:48 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 86
+[06-Jun-2023 01:35:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 86
+[06-Jun-2023 01:35:48 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 91
+[06-Jun-2023 01:35:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 91
+[06-Jun-2023 01:35:48 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 95
+[06-Jun-2023 01:35:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 95
+[06-Jun-2023 01:35:48 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 99
+[06-Jun-2023 01:35:48 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 99
+[06-Jun-2023 01:39:32 UTC] PHP Warning:  Undefined array key "valAnswers" in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 115
+[06-Jun-2023 01:39:57 UTC] PHP Warning:  Undefined array key "respuesta_correcta" in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 24
+[06-Jun-2023 01:40:08 UTC] PHP Warning:  Undefined array key "respuesta_correcta" in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 24
+[06-Jun-2023 01:42:15 UTC] PHP Warning:  Undefined array key "respuesta_correcta" in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 27
+[06-Jun-2023 01:43:24 UTC] PHP Warning:  Undefined array key "respuesta_correcta" in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 24
+[06-Jun-2023 01:44:01 UTC] PHP Warning:  Undefined array key "respuesta_correcta" in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 24
+[06-Jun-2023 01:47:34 UTC] PHP Warning:  Undefined array key "respuesta_correcta" in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 24
+[06-Jun-2023 02:01:03 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 81
+[06-Jun-2023 02:01:03 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 81
+[06-Jun-2023 02:01:03 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\admin\funciones.php on line 63
+[06-Jun-2023 02:01:03 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 93
+[06-Jun-2023 02:01:03 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 93
+[06-Jun-2023 02:01:03 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 99
+[06-Jun-2023 02:01:03 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 99
+[06-Jun-2023 02:01:03 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 105
+[06-Jun-2023 02:01:03 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 105
+[06-Jun-2023 02:01:03 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 111
+[06-Jun-2023 02:01:03 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 111

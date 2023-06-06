@@ -19,10 +19,9 @@ if (isset($_GET['actualizar'])) {
     //tomamos los datos que vienen del formulario
     $usuario = $_GET['usuario'];
     $password = $_GET['password'];
-    $totalPreguntas = $_GET['totalPreguntas'];
 
     //Armamos el query para actualizar en la tabla configuracion
-    $query = "UPDATE config SET usuario='$usuario', password='$password', totalPreguntas='$totalPreguntas' WHERE id='1'";
+    $query = "UPDATE users SET username='$usuario', password='$password' WHERE id='1'";
 
     //actualizamos en la tabla configuracion
     if (mysqli_query($conn, $query)) { //Se actualizo correctamente

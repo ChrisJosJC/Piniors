@@ -9,7 +9,7 @@ class activitiesModel extends Model
         $this->url = $_SERVER["REQUEST_URI"];
         $this->url = trim($this->url, "/");
         $this->url = explode("/", $this->url);
-        
+
         switch ($this->url[0]) {
             case 'challenges':
                 $this->AumentarVisita(2);
@@ -17,41 +17,47 @@ class activitiesModel extends Model
             case 'memoria':
                 $this->AumentarVisita(3);
                 break;
-            case 'lenguajes':
+            case 'keyboard':
                 $this->AumentarVisita(4);
                 break;
-            
+
             default:
                 $this->AumentarVisita(1);
                 break;
         }
     }
 
-    public function AumentarVisita($id){
+    public function AumentarVisita($id)
+    {
         $query = $this->db->connect()->prepare("SELECT * FROM estadisticas  WHERE id=?");
         $query->execute([$id]);
         $estadistica = $query->fetch(PDO::FETCH_ASSOC);
         $visitas = $estadistica['visitas'];
         $visitas = $visitas + 1;
-    
+
         $query = $this->db->connect()->prepare("UPDATE estadisticas SET visitas = ? WHERE id=?");
         $query->execute([$visitas, $id]);
         // $result = $query->fetch(PDO::FETCH_ASSOC);
     }
 
-    public function updateScore($puntos=0){
-        $id = $_SESSION["ID"];
-        $query = $this->db->connect()->prepare("SELECT * FROM users WHERE id=?");
-        $query->execute([$id]);
-        $users = $query->fetch(PDO::FETCH_ASSOC);
-        $score = $users['score'];
-        $score = $score + $puntos;
-        $_SESSION["data"]["score"] = $score;
-    
-        $query = $this->db->connect()->prepare("UPDATE users SET score = ? WHERE id=?");
-        $query->execute([$score, $id]);
+    public function updateScore($puntos = 0)
+    {
+        try {
+            $id = $_SESSION["ID"];
+            $query = $this->db->connect()->prepare("SELECT * FROM users WHERE id=?");
+            $query->execute([$id]);
+            $users = $query->fetch(PDO::FETCH_ASSOC);
+            $score = $users['puntos'];
+            $score = $score + $puntos;
+            $_SESSION["data"]["puntos"] = $score;
+
+            $query = $this->db->connect()->prepare("UPDATE users SET puntos = ? WHERE id=?");
+            $query->execute([$score, $id]);
+        } catch (PDOException $e) {
+            throw $e;
+        }
     }
-    
+
 }
 
 ?>

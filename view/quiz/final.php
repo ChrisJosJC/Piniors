@@ -55,11 +55,17 @@ aumentarCompletados();
     <script>
         let score =document.getElementById("score-php").textContent
         let body = new FormData()
-        body.append("score", score)
-        fetch('/login/updateScore',{
+        body.append("score",score)
+        fetch("/keyboard/addScore",{
             method: "POST",
             body
         })
+        .then(res => res.text())
+        .catch(e => console.error(e))
+        console.log(
+            <?php echo json_encode($_SESSION["answers"]); ?>,
+            <?php echo json_encode($_SESSION["valAnswers"]); ?>
+        )
     </script>
 </body>
 </html>
