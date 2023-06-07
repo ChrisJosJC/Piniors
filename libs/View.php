@@ -12,6 +12,7 @@ class View {
         else if($level == 0) include_once("view/".$name.".php");
         else if($level == 1 && $_SESSION["rol"] == ("user"||"admin")) include_once("view/".$name.".php");
         else if($level == 2 && $_SESSION["rol"] == "admin") include_once("view/".$name.".php");
+        else if($level == 5 && $_SESSION["rol"] == "admin") include_once("view/".$redirect.".php");
         else include_once("view/".$redirect.".php") ;
     }
 
