@@ -37,7 +37,7 @@
 </header>
 <div id="myLinks">
 <a href="/blog">Blog</a>
-                    <<a href="/actividades">Actividades</a>
+                    <a href="/actividades">Actividades</a>
                     <?php
                     if (!isset($_SESSION["rol"])) {
                     ?>
