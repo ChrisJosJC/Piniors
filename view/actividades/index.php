@@ -5,47 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/favicon.svg">
-    <title>Piniors - Actividades</title>
+    <title>Actividades Piniors</title>
     <link rel="stylesheet" href="/public/styles/actividades.css">
-    <script defer src="/public/script/change-button.js"></script>
 </head>
 
-
 <body>
-<?php include("view/includes/header.php") ?>
-    <section id="quiz">
-        <article>
-            <h3>Quiz de programacion</h3>
-                        <p>Responde ante algunas preguntas de nivel facil a mediano que te haran pensar por un buen rato.</p>
-                        <a href="/quiz">Ver mas</a>
-        </article>
-    </section>
-    <section id="retos">
-        <article>
-            <h2>Editor de codigo</h2>
-                        <p>Nuestra mayor herramienta para que puedas almacenar y ver tu codigo en tiempo real para que crees e innoves de forma online.
-                        </p>
-                        <a href="/challenges">Probar ahora mismo</a>
-        </article>
-    </section>
-    <section id="memoria">
-        <article>
-            <h2>Memoria</h2>
-                        <p>Juega el tipico juego de memoria, una y otra vez hasta conseguir recordar con mucha más facilidad todo tipo de cosas.
-                        </p>
-                        <a href="/memoria">Ver más</a>
-        </article>
-    </section>
-    <section id="keyboard">
-        <article>
-            <h2>Test de escritura</h2>
-                        <p>Descubre tu numero de palabra por minutos con este sencillo, pero provechoso juego en el que necesitas escribir lo más rapido que puedas sin cometer errores.
-                        </p>
-                        <a href="/keybaord">Ver más</a>
-        </article>
-    </section>
-    <a id="nav-btn" href="#retos">Siguiente</a>
+    <?php include("view/includes/header.php") ?>
+
+
+    <div class="cam">
+        <h1>PINIORS</h1>
+    </div>
+    
+    <h2>Actividades</h2>
+    <div class="car">
+
+        <div class="contenedor">
+
+            <div class="caja-animado">
+
+                <h2>Editor de codigo</h2>
+                <p>Actividad en la cual podrás almacenar y ver una previsualización
+                    del código en tiempo real utilizando HTML, CSS y JAVASCRIPT.</p>
+                <a href="#"> <button class="btn">Jugar ya mismo</button></a>
+            </div>
+
+            <div class="caja-animado">
+                <h2>Quiz</h2>
+                <p>un juego de preguntas acerca de distintos temas en el cual
+                    demostrarás tus conocimientos sobre estos, desde historia,
+                    deporte, programación, física y comida.</p>
+                <a href="#"> <button class="btn">Jugar ya mismo</button></a>
+            </div>
+        </div>
+
+
+        <div class="conte">
+            <div class="caja-animado1">
+                <h2>Memoria</h2>
+                <p>Juego en el cual podrás mejorar tu capacidad de memorizar las cosas, en este caso, los números.</p>
+                <a href="#"> <button class="btn">Jugar ya mismo</button></a>
+            </div>
+
+            <div class="caja-animado1">
+                <h2>Lenguaje</h2>
+                <p>Juego en el cual podrás mejorar tu capacidad de memorizar las cosas, en este caso, los números.</p>
+                <a href="#"> <button class="btn">Jugar ya mismo</button></a>
+            </div>
+        </div>
+    </div>
+    <?php include('view/includes/footer.php') ?>
+
+    <script src="/public/script/actividad.js"></script>
+    <script src="/public/script/actividades.js"></script>
 </body>
 
 </html>

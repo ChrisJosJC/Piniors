@@ -5,7 +5,7 @@ function obtenerConfiguracion()
     include("conexion.php");
 
     //Selecciono el registro dela configuración
-    $query = "SELECT * FROM users  WHERE rol='admin'";
+    $query = "SELECT * FROM config";
     $result = mysqli_query($conn, $query);
     $config = mysqli_fetch_assoc($result);
     return $config;

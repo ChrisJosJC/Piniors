@@ -1,53 +1,227 @@
 @import url("/public/styles/basic.css");
-section {
-    display: grid;
-    place-items: center;
-    background-color: var(--naranja-claro);
-    height: 100vh;
-    padding: 20%;
-    background-image: url("/public/img/pensamiento_creativo.png");
-    box-sizing: border-box;
+
+.right i {
+  border: solid #0c0c0b;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 20px;
+  margin: -200px;
 }
 
-#retos{
-    background-color: var(--verde);
-    background-position: top right;
-    color: white;
+.cam {
+display:grid;    
+place-items: center;
+  margin-left: -12px;
+  width: 100vw;
+  height: 275px;
+  box-sizing: border-box;
+  padding: 10%;
+  padding-top:200px;
+  background: -webkit-radial-gradient(#fefae0, #dda15e);
 }
-section a{
-    background-color: var(--verde-claro);
-    padding: 10px 5px;
-    border-radius: 5px;
-    border: 2px solid #fff;
-    font-weight: 700;
-    font-size: 1em;
-    width: 100%;
-    margin-top:10px;
-    display:block;
-    color:white;
-    text-decoration: none;
+.c h2 {
+  color: #283618;
 }
 
-#retos a{
-    background-color: var(--naranja-claro);
+.c {
+  padding-right: 450px;
+}
+.cam h1 {
+  color: #283618;
+  font-size: 100px;
+  display: inline-block;
+  position: absolute;
+}
+.cam h1::after,
+.cam h1::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: #283618;
+  top: 0.6em;
 }
 
-article{
-    background-color: #fff4;
-    backdrop-filter: blur(4px);
-    padding: 50px;
-    box-shadow:4px 2px 6px #fff2;
-    box-sizing: border-box;
+.cam h1::before {
+  left: -150px;
 }
-#nav-btn{
-    position:fixed;
-    display: inline-block;
-    bottom:10px;
-    right: 10px;
-    background-color: var(--verde);
-    text-decoration: none;
-    color: var(--naranja-claro);
-    font-weight: 800;
-    padding:10px 5px;
-    border-radius: 5px;
+
+.cam h1::after {
+  right: -150px;
+}
+.cam h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-left: 35%;
+  padding: 200px;
+}
+
+.contenedor {
+  padding-left: 90px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.caja-animado {
+  border: 1px sold #fefae0;
+  padding: 85px;
+  width: 400px;
+  margin-top: -25px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.conte {
+  padding-left: 90px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.caja-animado1 {
+  border: 1px sold;
+  padding: 45px;
+  width: 400px;
+  margin-top: -30px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.butt {
+  margin: 25px;
+}
+
+.btn {
+  overflow: hidden;
+  border: 3 px solid #283618;
+  z-index: 1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  left: 0;
+  top: -200%;
+  background-color: #283618;
+  border-radius: 50%;
+  transition: all 2s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  top: 0;
+  border-radius: 0%;
+}
+
+button {
+  position: relative;
+  padding: 13px 50px;
+  border: none;
+  outline: none;
+  background: #dda15e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button span {
+  position: absolute;
+  background: #dda15e;
+}
+
+h2 {
+  color: #283618;
+}
+p {
+  color: #283618;
+  font-size: 20px;
+  text-align: justify;
+}
+
+/*Parte principal de la pagina donde se encuentra el logo y el nombre de la pagina*/
+
+.logo {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 b {
+  color: #0c0c0b;
+}
+
+/*Menu de la pagina principal*/
+
+.menu {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu nav ul li {
+  height: 100%;
+  margin: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.menu nav ul li a {
+  color: #0c0c0b;
+  transition: color 300ms;
+  text-decoration: none;
+}
+
+.contenedor {
+  opacity: 0;
+  transition: all 3s;
+}
+
+.mostrar1 {
+  animation: mostrar 4s;
+}
+
+@keyframes mostrar1 {
+  0% {
+    transform: translateX(200px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.conte {
+  opacity: 0;
+  transition: all 3s;
+}
+
+.mostrar {
+  animation: mostrar 4s;
+}
+
+@keyframes mostrar {
+  0% {
+    transform: translateX(200px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }

@@ -48,7 +48,7 @@ class Admin extends Controller
 
     function login()
     {
-        $this->view->render("login/index");
+        $this->view->render("admin/login");
     }
     function cambiarNombreTema()
     {
