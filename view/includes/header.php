@@ -36,16 +36,22 @@
         </a>
 </header>
 <div id="myLinks">
-<?php
-    if ($_SESSION["rol"] == "admin") {
+<a href="/blog">Blog</a>
+                    <<a href="/actividades">Actividades</a>
+                    <?php
+                    if (!isset($_SESSION["rol"])) {
+                    ?>
+                        <a href="/login">Inicia sesion</a>
+                    <?php
+    }else if ($_SESSION["rol"] == "admin") {
     ?>
         <a href="/panel">Panel</a>
-        <a href="/login/logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+        <a href="/login/logout">Cerrar sesion <i class="fa-solid fa-right-from-bracket"></i></a>
     <?php
     } else {
     ?>
         <a href="/dashboard">Panel</a>
-        <a href="/login/logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+        <a href="/login/logout">Cerrar sesion <i class="fa-solid fa-right-from-bracket"></i></a>
     <?php
     }
     ?>
