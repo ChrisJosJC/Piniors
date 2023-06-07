@@ -1,7 +1,7 @@
 <header class="header-basic">
     <div class="header-content">
         <div class="logo">
-            <i style="font-size: 1rem;" class="fa-solid fa-arrow-left" onclick="comeBack()"></i>
+            <i style='font-size: 1rem;' class='fa-solid fa-arrow-left' onclick='comeBack()'></i>
             <img src="/public/favicon.svg" width="40px">
             <div class="conteiner">
                 <h1><b><a href="/">Piniors</a></b></h1>
@@ -70,4 +70,5 @@
         history.back()
     }
 </script>
-<script src="https://kit.fontawesome.com/3f1ffa954b.js" crossorigin="anonymous"></script>
+<script defer src="https://kit.fontawesome.com/3f1ffa954b.js" crossorigin="anonymous"></script>
+

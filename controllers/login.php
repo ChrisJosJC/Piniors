@@ -6,7 +6,7 @@ class Login extends Controller
     {
         parent::__construct();
         ob_start();
-        $this->view->render("login/index");
+        $this->view->render("login/index",-1,"dashboard/index");
     }
 
     function signup()
