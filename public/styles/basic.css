@@ -76,7 +76,7 @@
   }
   
   
-  .menu nav ul li a {
+  .menu ul a {
     color: #f0eded;
     transition: color 300ms;
   }

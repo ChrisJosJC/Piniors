@@ -27,7 +27,7 @@
                 <h2>Editor de codigo</h2>
                 <p>Actividad en la cual podrás almacenar y ver una previsualización
                     del código en tiempo real utilizando HTML, CSS y JAVASCRIPT.</p>
-                <a href="#"> <button class="btn">Jugar ya mismo</button></a>
+                <a href="/challenges"> <button class="btn">Jugar ya mismo</button></a>
             </div>
 
             <div class="caja-animado">
@@ -35,22 +35,22 @@
                 <p>un juego de preguntas acerca de distintos temas en el cual
                     demostrarás tus conocimientos sobre estos, desde historia,
                     deporte, programación, física y comida.</p>
-                <a href="#"> <button class="btn">Jugar ya mismo</button></a>
+                <a href="/quiz"> <button class="btn">Jugar ya mismo</button></a>
             </div>
         </div>
 
 
         <div class="conte">
             <div class="caja-animado1">
-                <h2>Memoria</h2>
-                <p>Juego en el cual podrás mejorar tu capacidad de memorizar las cosas, en este caso, los números.</p>
-                <a href="#"> <button class="btn">Jugar ya mismo</button></a>
+                <h2>Teclado</h2>
+                <p>Juego en el cual podrás mejorar tu capacidad de escritura al leer y escribir tan rapido y correctamente como puedas.</p>
+                <a href="/keyboard"> <button class="btn">Jugar ya mismo</button></a>
             </div>
 
             <div class="caja-animado1">
                 <h2>Lenguaje</h2>
                 <p>Juego en el cual podrás mejorar tu capacidad de memorizar las cosas, en este caso, los números.</p>
-                <a href="#"> <button class="btn">Jugar ya mismo</button></a>
+                <a href="/lenguaje"> <button class="btn">Jugar ya mismo</button></a>
             </div>
         </div>
     </div>
