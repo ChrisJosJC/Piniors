@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actividades Piniors</title>
-    <link rel="stylesheet" href="/public/styles/actividades.css">
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />    <title>Actividades Piniors</title>
+    <link rel="stylesheet" href="/public/styles/actividades.css?v?=7">
 </head>
 
 <body>
@@ -32,7 +34,7 @@
 
             <div class="caja-animado">
                 <h2>Quiz</h2>
-                <p>un juego de preguntas acerca de distintos temas en el cual
+                <p>Un juego de preguntas acerca de distintos temas en el cual
                     demostrarás tus conocimientos sobre estos, desde historia,
                     deporte, programación, física y comida.</p>
                 <a href="/quiz"> <button class="btn">Jugar ya mismo</button></a>
@@ -50,7 +52,7 @@
             <div class="caja-animado1">
                 <h2>Lenguaje</h2>
                 <p>Juego en el cual podrás mejorar tu capacidad de memorizar las cosas, en este caso, los números.</p>
-                <a href="/lenguaje"> <button class="btn">Jugar ya mismo</button></a>
+                <a href="/lenguajes"> <button class="btn">Jugar ya mismo</button></a>
             </div>
         </div>
     </div>

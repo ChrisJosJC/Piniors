@@ -28,7 +28,9 @@ Objective-C++
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/styles/lenguaje.css">
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />    <link rel="stylesheet" href="/public/styles/lenguaje.css?v?=7">
     <title>Adivina el logo</title>
 </head>
 <body>

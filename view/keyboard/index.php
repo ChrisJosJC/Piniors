@@ -4,9 +4,11 @@
   <head>
     <meta charset="utf-8">  
     <title>Typing Speed Test Game | CodingNepal</title>
-    <link rel="stylesheet" href="/public/styles/keyboard.css">
+    <link rel="stylesheet" href="/public/styles/keyboard.css?v?=7">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />  </head>
   <body>
   <?php include("view/includes/header.php") ?>
   <div class="wrapper">
