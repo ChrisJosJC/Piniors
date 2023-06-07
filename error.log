@@ -46,3 +46,25 @@ Stack trace:
 [06-Jun-2023 02:01:03 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 105
 [06-Jun-2023 02:01:03 UTC] PHP Warning:  Undefined variable $preguntaActual in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 111
 [06-Jun-2023 02:01:03 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\view\quiz\jugar.php on line 111
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Undefined array key "title" in C:\xampp\htdocs\Piniors\controllers\blog.php on line 40
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Undefined array key "descripcion" in C:\xampp\htdocs\Piniors\controllers\blog.php on line 41
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Undefined array key "archivo" in C:\xampp\htdocs\Piniors\controllers\blog.php on line 44
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\controllers\blog.php on line 44
+[07-Jun-2023 01:09:49 UTC] PHP Deprecated:  basename(): Passing null to parameter #1 ($path) of type string is deprecated in C:\xampp\htdocs\Piniors\controllers\blog.php on line 44
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Undefined array key "archivo" in C:\xampp\htdocs\Piniors\controllers\blog.php on line 49
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\controllers\blog.php on line 49
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Undefined array key "archivo" in C:\xampp\htdocs\Piniors\controllers\blog.php on line 52
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\controllers\blog.php on line 52
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Undefined array key "archivo" in C:\xampp\htdocs\Piniors\controllers\blog.php on line 65
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\controllers\blog.php on line 65
+[07-Jun-2023 01:09:49 UTC] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in C:\xampp\htdocs\Piniors\controllers\blog.php on line 65
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Undefined array key "portada" in C:\xampp\htdocs\Piniors\controllers\blog.php on line 69
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\controllers\blog.php on line 69
+[07-Jun-2023 01:09:49 UTC] PHP Deprecated:  basename(): Passing null to parameter #1 ($path) of type string is deprecated in C:\xampp\htdocs\Piniors\controllers\blog.php on line 69
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Undefined array key "archivo" in C:\xampp\htdocs\Piniors\controllers\blog.php on line 74
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\controllers\blog.php on line 74
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Undefined array key "archivo" in C:\xampp\htdocs\Piniors\controllers\blog.php on line 77
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\controllers\blog.php on line 77
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Undefined array key "archivo" in C:\xampp\htdocs\Piniors\controllers\blog.php on line 91
+[07-Jun-2023 01:09:49 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\Piniors\controllers\blog.php on line 91
+[07-Jun-2023 01:09:49 UTC] PHP Deprecated:  move_uploaded_file(): Passing null to parameter #1 ($from) of type string is deprecated in C:\xampp\htdocs\Piniors\controllers\blog.php on line 91

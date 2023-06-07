@@ -12,9 +12,8 @@ class registroModel extends Model
     {
         // insertar datos en la BD
         try {
-            $query = $this->db->connect()->prepare('INSERT INTO `users`( `name`,`username`, `email`, `password`,`img_profile`) VALUES (?,?,?,?,?)');
+            $query = $this->db->connect()->prepare('INSERT INTO `users`( `name`,`username`, `email`, `password`,`img_profile`,`rol`) VALUES (?,?,?,?,?, 2)');
             $query->execute($datos);
-
             $_SESSION["level"] = 0;
             $_SESSION["username"] = $datos[1];
             $_SESSION["email"] = $datos[2];
